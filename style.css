@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+/* 
+==========================================
+MOBILE FIRST STRUCTURE
+==========================================
+*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  align-items: center;
+  background-color: #f2ebe3;
+}
+
+main {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#product-photo {
+  width: 100%;
+}
+
+#image-small {
+  width: 100%;
+}
+
+#image-large {
+  display: none;
+}
+
+#product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+#icon-cart {
+  width: 1.1rem;
+  height: 1.rem;
+}
+
+footer { 
+  font-size: 11px;
+  text-align: center;
+}
+
+footer a { 
+  color: #3e52a3; 
+}
+
+/* 
+==========================================
+STYLE CSS
+==========================================
+*/
+
+main {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#product-info {
+  padding: 25px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  color: #6c7289;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+#product-category {
+  letter-spacing: 0.6rem;
+}
+
+h1, h2 {
+  font-family: 'Fraunces', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+h1 {
+  color: #1c232b;
+}
+
+h2 {
+  color: #3c8067;
+}
+
+#price p {
+  text-decoration: line-through;
+}
+
+button {
+  background-color: #3c8067;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #265342;
+}
+
+/* 
+==========================================
+DESKTOP MEDIA QUERIES
+==========================================
+*/
+
+@media screen and (min-width: 576px) {
+  main {
+    flex-direction: row;
+    width: 576px;
+  }
+
+  #image-small {
+    display: none;
+  }
+
+  #image-large {
+    display: block;
+    width: 288px;
+  }
+
+  #product-info {
+    justify-content: space-between;
+  }
+  
+}
